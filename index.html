@@ -14,24 +14,30 @@
         <form action="" method="get" class="form-example">
             <div class="formulaire">
                 <label for="name">Prénom: <br> </label>
-                <input type="name" placeholder="Votre prénom" name="name" id="name" required>
+                <input type="name" placeholder="Votre prénom" name="name" required>
             </div>
             <div class="formulaire">
                 <label for="fname">Nom de famille: <br> </label>
-                <input type="fname" placeholder="Votre nom" name="fname" id="fname" required>
+                <input type="fname" placeholder="Votre nom" name="fname" required>
             </div>
             <div class="formulaire">
                 <label for="email">Adresse mail: <br> </label>
-                <input type="email" placeholder="E-mail" name="email" id="email" required>
+                <input type="email" placeholder="E-mail" name="email" required>
             </div>
             <div class="formulaire">
                 <label for="tel">Numéro de téléphone: <br> </label>
-                <input type="tel" name="tel" placeholder="N°" id="tel" required> <br>
+                <input type="tel" name="tel" placeholder="N°" required> <br>
             </div>
             <div class="formulaire">
-                <input type="submit" value="Envoyer!">
+                <input type="submit" value="Envoyer !" id="btn">
             </div>
-        </form>
+
+            <div id="boxBack">
+                <div id="boxWrap">
+                    <div id="boxTxt"></div>
+                    <input type="button" value="OK" onclick="dbox()" />
+                </div>
+            </div>
     </div>
     <script src="./script.js">
     </script>

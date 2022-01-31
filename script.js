@@ -1,11 +1,8 @@
-let form = document.getElementsByTagName("form")[0];
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+const btn = document.getElementById("btn");
 
-    function dbox(msg) {
-        if (msg != undefined) {
-            document.getElementById("boxTxt").innerHTML = msg;
-            document.getElementById("boxBack").classList.add("show");
-        } else { document.getElementById("boxBack").classList.remove("show"); }
-    };
-});
+btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById("boxTxt").innerHTML = "OK";
+    document.getElementById("boxBack").classList.add("show");
+    document.getElementById("boxBack").classList.remove("show");
+})
